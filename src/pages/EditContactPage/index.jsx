@@ -43,7 +43,7 @@ const EditContactPage = () => {
           role="button"
           onClick={handleDone}
           style={!dataIsValid ? { cursor: "default" } : {}}
-          className={styles.header_btn + (!dataIsValid ? " gray" : "")}
+          className={styles.header_btn + (!dataIsValid ? " color_gray" : "")}
         >
           Done
         </p>

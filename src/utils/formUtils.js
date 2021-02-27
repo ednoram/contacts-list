@@ -2,12 +2,9 @@ export const contactDataIsValid = (contactData) =>
   (contactData.firstName.trim() || contactData.lastName.trim()) &&
   (contactData.phoneNumbers.length < 1 ||
     !contactData.phoneNumbers
-      .reduce(
-        (acc, phoneNumber) => [
-          ...acc,
-          !phoneNumber || Boolean(phoneNumber.match(/^[- +()0-9]+$/)),
-        ],
-        []
+      .map(
+        (phoneNumber) =>
+          !phoneNumber || Boolean(phoneNumber.match(/^[- +()0-9]+$/))
       )
       .includes(false));
 
