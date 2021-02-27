@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+
+.main_page {
+  padding: 16px 0;
+
+  .main_page_header {
+    padding: 8px 20px;
+  }
+
+  .add_contact_icon {
+    width: 18px;
+    fill: $blue;
+    cursor: pointer;
+  }
+}

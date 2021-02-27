@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+.edit_contact_page {
+  padding-top: 16px;
+
+  .header {
+    padding: 0 16px;
+  }
+
+  .header_btn {
+    color: $blue;
+    cursor: pointer;
+  }
+
+  .delete_contact_btn {
+    color: $red;
+    user-select: none;
+    cursor: pointer;
+    margin: 16px auto 20px;
+  }
+}

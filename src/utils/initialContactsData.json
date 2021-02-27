@@ -1,0 +1,107 @@
+[
+  {
+    "firstName": "Lauren",
+    "lastName": "Newman",
+    "company": "Microsoft",
+    "phoneNumbers": ["(405) 322-1666"],
+    "emails": ["laurennewman@gmail.com"]
+  },
+  {
+    "firstName": "Austin",
+    "lastName": "Adam",
+    "company": "Facebook",
+    "phoneNumbers": ["(224) 822-5529"],
+    "emails": ["austin.adam@gmail.com"]
+  },
+  {
+    "firstName": "David",
+    "lastName": "Lewis",
+    "company": "Apple",
+    "phoneNumbers": ["(926) 346-5643"],
+    "emails": ["davidlewis@gmail.com"]
+  },
+  {
+    "firstName": "Messiah",
+    "lastName": "Farina",
+    "company": "Google",
+    "phoneNumbers": ["(301) 581-9647"],
+    "emails": ["m.farina@gmail.com"]
+  },
+  {
+    "firstName": "Melissa",
+    "lastName": "Buchanan",
+    "company": "Apple",
+    "phoneNumbers": ["(723) 768-6845"],
+    "emails": ["melissabuchanan@gmail.com"]
+  },
+  {
+    "firstName": "Alessandra",
+    "lastName": "Abbott",
+    "company": "Facebook",
+    "phoneNumbers": ["(249) 548-7393"],
+    "emails": ["alessandra.abb@gmail.com"]
+  },
+  {
+    "firstName": "Benjamin",
+    "lastName": "Ridgway",
+    "company": "Amazon",
+    "phoneNumbers": ["(540) 228-0050"],
+    "emails": ["banjaminridgway@gmail.com"]
+  },
+  {
+    "firstName": "Michelle",
+    "lastName": "Klink",
+    "company": "Amazon",
+    "phoneNumbers": ["(477) 568-3838"],
+    "emails": ["michelle.klink@gmail.com"]
+  },
+  {
+    "firstName": "Baron",
+    "lastName": "Hamilton",
+    "company": "Microsoft",
+    "phoneNumbers": ["(326) 295-4615"],
+    "emails": ["baronhamilton@gmail.com"]
+  },
+  {
+    "firstName": "Aaron",
+    "lastName": "Smith",
+    "company": "Apple",
+    "phoneNumbers": ["(951) 465-2494"],
+    "emails": ["aaronsmith@gmail.com"]
+  },
+  {
+    "firstName": "Zac",
+    "lastName": "Klerks",
+    "company": "Facebook",
+    "phoneNumbers": ["(165) 726-8569"],
+    "emails": ["zacklerks@gmail.com"]
+  },
+  {
+    "firstName": "Peter",
+    "lastName": "Mann",
+    "company": "Amazon",
+    "phoneNumbers": ["(986) 659-9865"],
+    "emails": ["petemann@gmail.com"]
+  },
+  {
+    "firstName": "Vivien",
+    "lastName": "O'Brien",
+    "company": "Facebook",
+    "phoneNumbers": ["(865) 512-4155"],
+    "emails": ["vivienobrien@gmail.com"]
+  },
+  {
+    "firstName": "Eric",
+    "lastName": "Benson",
+    "company": "Apple",
+    "phoneNumbers": ["(564) 263-2315"],
+    "emails": ["ericbenson@gmail.com"]
+  },
+  {
+    "firstName": "Zane",
+    "lastName": "Davis",
+    "company": "Apple",
+    "phoneNumbers": ["(167) 642-6531"],
+    "emails": ["ericbenson@gmail.com"]
+  }
+]

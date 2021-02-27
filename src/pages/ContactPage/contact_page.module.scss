@@ -1,0 +1,108 @@
+@import "../../styles/variables.scss";
+
+.contact_page {
+  padding: 16px 0 32px;
+
+  .header {
+    padding: 0 16px;
+
+    .header_btn {
+      color: $blue;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    .header_btn:first-child {
+      margin-left: -8px;
+    }
+
+    .left_arrow {
+      fill: $blue;
+      width: 14px;
+      margin-right: 2px;
+    }
+  }
+
+  .contact_name {
+    text-align: center;
+    font-size: 22px;
+    font-weight: normal;
+    padding: 0 16px;
+    margin-top: 12px;
+  }
+
+  .contact_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid $gray;
+    background-size: 90px;
+    background-position: center;
+    background-repeat: no-repeat;
+    user-select: none;
+    color: $gray;
+    font-size: 56px;
+    margin: 16px auto 0;
+  }
+
+  .detailed_info {
+    padding: 0 16px;
+    margin-top: 22px;
+
+    .info_list_item {
+      border-bottom: 1px solid black;
+      padding: 0 0 8px;
+      margin-top: 16px;
+    }
+
+    .info_p {
+      display: inline-block;
+      color: $blue;
+      margin-top: 4px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .actions {
+    ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    li {
+      margin: 0 8px;
+    }
+
+    .action_btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 64px;
+      height: 64px;
+      border: 1px solid $blue;
+      border-radius: 12px;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+      color: $blue;
+      padding: 8px;
+    }
+
+    .action_btn_icon {
+      fill: $blue;
+      height: 22px;
+      margin-bottom: 3px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

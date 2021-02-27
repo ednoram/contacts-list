@@ -1,0 +1,30 @@
+@import "./normalize.scss";
+@import "./variables.scss";
+
+.flex_space_between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.color_gray {
+  color: $gray !important;
+}
+
+.color_blue {
+  color: $blue !important;
+}
+
+.text_align_center {
+  text-align: center;
+}

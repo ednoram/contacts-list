@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.add_contact {
+  padding-top: 16px;
+
+  .header {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    padding: 0 16px;
+  }
+
+  .header_btn {
+    color: $blue;
+    cursor: pointer;
+  }
+
+  .header_btn {
+    text-align: right;
+    user-select: none;
+  }
+
+  .header_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,105 @@
+@import "../../styles/variables.scss";
+
+.form {
+  .photo_section {
+    padding: 25px 0;
+
+    .contact_photo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: url("../../assets/no_contact_photo.png");
+      background-size: 110px;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: 3px solid $gray;
+      font-size: 64px;
+      color: $gray;
+      cursor: pointer;
+      margin: auto;
+    }
+
+    .add_photo_btn {
+      display: inline-block;
+      text-align: center;
+      color: $blue;
+      cursor: pointer;
+      margin-top: 12px;
+    }
+  }
+
+  .form_inputs_list li {
+    width: calc(100% - 32px);
+    height: 42px;
+    border: none;
+    border-bottom: 1px solid $gray;
+    margin: 0 16px;
+  }
+
+  .form_input {
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .add_input_btn {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    color: $blue;
+    cursor: pointer;
+    line-height: 20px;
+    margin: 10px 0 28px 16px;
+
+    .add_input_icon {
+      width: 20px;
+      height: 20px;
+      background: $green;
+      border-radius: 50%;
+      border: none;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 6px;
+
+      svg {
+        fill: white;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+      }
+    }
+  }
+
+  .company_input_li {
+    margin-bottom: 28px !important;
+  }
+
+  .remove_input_btn {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    right: 16px;
+    background: $red;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 10px 0;
+
+    svg {
+      fill: white;
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .removable_input {
+    width: calc(100% - 28px);
+  }
+}

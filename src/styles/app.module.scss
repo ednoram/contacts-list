@@ -1,0 +1,82 @@
+@import "./variables.scss";
+
+.app {
+  font-family: Arial, Helvetica, sans-serif;
+
+  .iphone_div {
+    position: relative;
+
+    @media (min-height: 800px) {
+      top: calc(50vh - 400px);
+    }
+
+    .iphone_img {
+      height: 750px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+
+      @media (max-width: 425px) {
+        display: none;
+      }
+    }
+
+    .content {
+      position: absolute;
+      top: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 320px;
+      height: 692px;
+      border-radius: 35px;
+      box-sizing: border-box;
+      overflow-y: scroll;
+      padding: 36px 0 40px;
+
+      @media (max-width: 425px) {
+        position: static;
+        width: unset;
+        height: unset;
+        transform: none;
+        padding: 20px 0 40px;
+        overflow-y: unset;
+      }
+    }
+
+    .status_bar {
+      position: absolute;
+      left: 50%;
+      top: 28px;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+      background: white;
+      width: 320px;
+      font-size: 14px;
+      padding: 12px 18px 7px 22px;
+
+      @media (max-width: 425px) {
+        display: none;
+      }
+
+      .time {
+        text-align: center;
+      }
+
+      .status_bar_icon {
+        height: 15px;
+        margin-top: -2px;
+      }
+
+      .states_bar_battery_icon {
+        height: 16px;
+      }
+    }
+
+    .content::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+  }
+}

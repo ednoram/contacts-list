@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.list {
+  margin-top: 20px;
+
+  .list_item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $gray;
+    cursor: pointer;
+    height: 46px;
+    padding: 8px 0;
+    margin: 0 16px;
+
+    p {
+      max-width: calc(100% - 36px);
+    }
+  }
+
+  .list_group .list_item:last-of-type {
+    border: none;
+  }
+
+  .list_group:last-of-type .list_item:last-of-type {
+    border-bottom: 1px solid $gray;
+  }
+
+  .first_char_bar {
+    background: $light_gray;
+    padding: 2px 16px;
+  }
+
+  .contacts_count_p {
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+    font-size: 18px;
+  }
+
+  .no_matches_p,
+  .showing_matches_p {
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+
+  .contact_photo_div {
+    width: 28px;
+    height: 28px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    line-height: 27px;
+    margin-right: 8px;
+  }
+}
