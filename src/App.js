@@ -9,12 +9,13 @@ import {
 } from "./pages";
 import styles from "./styles/app.module.scss";
 import IphoneImgSrc from "./assets/iphone.png";
+import { selectCurrentPage } from "./selectors";
 import { Time, DeleteConfirm } from "./components";
 import { ReactComponent as WifiIcon } from "./assets/wifi_icon.svg";
 import { ReactComponent as BatteryIcon } from "./assets/battery_icon.svg";
 
 const App = () => {
-  const currentPage = useSelector((state) => state.currentPage.page);
+  const currentPage = useSelector(selectCurrentPage);
 
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -42,11 +43,30 @@ const App = () => {
   };
 
   useEffect(() => {
+    const handleMobileScroll = () => {
+      if (currentPage === "main" && window.scrollY !== 0) {
+        setScrollPosition(window.scrollY);
+      }
+    };
+
     if (currentPage === "main") {
       contentRef.current.scrollTop = scrollPosition;
     } else {
       contentRef.current.scrollTop = 0;
     }
+
+    if (window.innerWidth <= 425) {
+      if (currentPage === "main") {
+        window.addEventListener("scroll", handleMobileScroll);
+        scrollPosition < 50
+          ? window.scroll(0, 0)
+          : window.scroll(0, scrollPosition);
+      } else {
+        window.scroll(0, 0);
+      }
+    }
+
+    return () => window.removeEventListener("scroll", handleMobileScroll);
   }, [currentPage]);
 
   return (
